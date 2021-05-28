@@ -68,7 +68,7 @@ function draw() {
 //function to spawn the clouds
 function spawnApples(){
  // write your code here 
-  if (frameCount % 55 == 0) {
+  if (frameCount % 345 == 0) {
     apple = createSprite(random(50, windowWidth-50), windowHeight-360, 10, 10);
     apple.addImage(appleImg);
     apple.scale = 0.07;
@@ -78,7 +78,7 @@ function spawnApples(){
   }
 }
 function spawnLeaf(){
-  if (frameCount %80 == 0) {
+  if (frameCount %320 == 0) {
     leaf = createSprite(random(50, windowWidth-50), windowHeight-360, 10, 10);
     leaf.addImage(leafImg);
     leaf.scale = 0.07;
@@ -89,7 +89,7 @@ function spawnLeaf(){
   
 }
 function spawnredLeaf(){
-  if (frameCount %95 == 0) {
+  if (frameCount %305 == 0) {
     redleaf = createSprite(random(50, windowWidth-50), windowHeight-360, 10, 10);
     redleaf.addImage(redleafImg);
     redleaf.scale = 0.05;
